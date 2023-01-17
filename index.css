@@ -60,3 +60,13 @@ button{
 .fa-rotate-left{
     color: white;
 }
+@media screen and (min-width: 350px){
+    .container{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1020px){
+    .container{
+        width: 63%;
+    }
+}
