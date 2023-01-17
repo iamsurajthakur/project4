@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background: url(project4.jpg) no-repeat center center/ cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    backdrop-filter: blur(10px);
+    width: 20%;
+    height: 25%;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    box-shadow: 0 0 25px;
+}
+#timer{
+    color: white;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+.button{
+    text-align: center;
+}
+button{
+    margin: 0px 20px;
+    margin-top: 30px;
+    border: none;
+}
+#play{
+    font-size: 40px;
+    padding: 7px;
+    background-color: rgb(16, 156, 16);
+    cursor: pointer;
+    
+}
+#reset{
+    font-size: 40px;
+    padding: 7px;
+    background-color: rgb(224, 62, 62);
+    cursor: pointer;
+}
+#pause{
+    font-size: 40px;
+    padding: 7px;
+    background-color: rgb(241, 174, 48);
+    cursor: pointer;
+}
+.fa-play{
+    color: white;
+}
+.fa-rotate-left{
+    color: white;
+}
