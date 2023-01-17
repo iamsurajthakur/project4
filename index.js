@@ -1,4 +1,4 @@
-const startStopBtn = document.getElementById('play');
+const startStopBtn = document.getElementById('startstopbtn');
 const reset = document.getElementById('reset');
 
 let second = 0;
@@ -59,4 +59,18 @@ startStopBtn.addEventListener('click', function () {
         document.getElementById('startstopbtn').innerHTML = `<i class="fa-solid fa-play" id="play"></i>`;
         timerStatus = 'stopped';
     }
-})
+});
+
+reset.addEventListener('click',function(){
+
+    window.clearInterval(timerInterval);
+    
+    second = 0;
+    minutes = 0;
+    hours = 0;
+    
+    document.getElementById('timer').innerHTML = '00:00:00';
+    document.getElementById('startstopbtn').innerHTML = `<i class="fa-solid fa-play" id="play"></i>`;
+    timerStatus = 'stopped';
+    
+});
